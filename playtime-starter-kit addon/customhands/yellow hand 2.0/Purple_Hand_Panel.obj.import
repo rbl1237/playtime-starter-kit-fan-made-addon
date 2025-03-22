@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://cn2xrwh7aqy8c"
-path="res://.godot/imported/Purple_Hand_Panel.obj-fed685ebe5e8f50476c08b9f0be943ef.mesh"
+path="res://.godot/imported/Purple_Hand_Panel.obj-53fc4bb540db38e14403b3a2a1b8b5bc.mesh"
 
 [deps]
 
-files=["res://.godot/imported/Purple_Hand_Panel.obj-fed685ebe5e8f50476c08b9f0be943ef.mesh"]
+files=["res://.godot/imported/Purple_Hand_Panel.obj-53fc4bb540db38e14403b3a2a1b8b5bc.mesh"]
 
-source_file="res://customhands/yellow hand 2.0/Purple_Hand_Panel.obj"
-dest_files=["res://.godot/imported/Purple_Hand_Panel.obj-fed685ebe5e8f50476c08b9f0be943ef.mesh", "res://.godot/imported/Purple_Hand_Panel.obj-fed685ebe5e8f50476c08b9f0be943ef.mesh"]
+source_file="res://playtime-starter-kit addon/customhands/yellow hand 2.0/Purple_Hand_Panel.obj"
+dest_files=["res://.godot/imported/Purple_Hand_Panel.obj-53fc4bb540db38e14403b3a2a1b8b5bc.mesh", "res://.godot/imported/Purple_Hand_Panel.obj-53fc4bb540db38e14403b3a2a1b8b5bc.mesh"]
 
 [params]
 

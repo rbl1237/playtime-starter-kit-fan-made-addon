@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://mdclxndo7q12"
-path="res://.godot/imported/yellow3.PNG-195e21b2e14b5ff84f19a0aa61aba9cf.ctex"
+path="res://.godot/imported/yellow3.PNG-4e4110a093c0eee9f98f8c09056a5d7e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://customhands/yellow hand 2.0/yellow3.PNG"
-dest_files=["res://.godot/imported/yellow3.PNG-195e21b2e14b5ff84f19a0aa61aba9cf.ctex"]
+source_file="res://playtime-starter-kit addon/customhands/yellow hand 2.0/yellow3.PNG"
+dest_files=["res://.godot/imported/yellow3.PNG-4e4110a093c0eee9f98f8c09056a5d7e.ctex"]
 
 [params]
 

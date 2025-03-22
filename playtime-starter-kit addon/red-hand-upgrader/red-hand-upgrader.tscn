@@ -1,11 +1,11 @@
-[gd_scene load_steps=31 format=4 uid="uid://dcd0skg5qt462"]
+[gd_scene load_steps=35 format=4 uid="uid://dcd0skg5qt462"]
 
-[ext_resource type="Script" uid="uid://bpgu0s72i4ifd" path="res://red-hand-upgrader/red_hand_upgrader.gd" id="1_isi4r"]
+[ext_resource type="Script" uid="uid://bpgu0s72i4ifd" path="res://playtime-starter-kit addon/red-hand-upgrader/red_hand_upgrader.gd" id="1_isi4r"]
 [ext_resource type="PackedScene" uid="uid://bunoh0iahfrtv" path="res://Objects/Gameplay/ControlPanel/ConsoleDoubleBase.tscn" id="1_ml5x2"]
 [ext_resource type="PackedScene" uid="uid://cxbtcmk7ewecu" path="res://Objects/Gameplay/ControlPanel/ConsoleBase.tscn" id="2_isi4r"]
 [ext_resource type="PackedScene" uid="uid://cn6s3f1x5eiy4" path="res://Objects/Gameplay/ControlPanel/keycard_reader.tscn" id="3_pjoit"]
 [ext_resource type="PackedScene" uid="uid://gcvu42jeojmy" path="res://Objects/Gameplay/ControlPanel/console_keypad_monitor.tscn" id="4_kob7v"]
-[ext_resource type="PackedScene" uid="uid://dwr46vlxb0f6f" path="res://red-hand-upgrader/models and textures/sm_consol_omni_hand_upgrader.tscn" id="5_5n0x1"]
+[ext_resource type="PackedScene" uid="uid://dwr46vlxb0f6f" path="res://playtime-starter-kit addon/red-hand-upgrader/models and textures/sm_consol_omni_hand_upgrader.tscn" id="5_5n0x1"]
 [ext_resource type="Texture2D" uid="uid://cv1cwjl5r8gis" path="res://Player/Grabpack/Models/Hands/T_RedHand_BC.png" id="7_p06tx"]
 [ext_resource type="Texture2D" uid="uid://ellyy4j02txn" path="res://Player/Grabpack/Models/Hands/T_RedHand_N.png" id="8_fngik"]
 [ext_resource type="Texture2D" uid="uid://dmubt4nij6cn2" path="res://Player/Grabpack/Models/Hands/T_RedHand_ORM.png" id="9_s6x23"]
@@ -14,6 +14,7 @@
 [ext_resource type="Script" uid="uid://cp2nj828ny1um" path="res://Objects/Gameplay/HandFunctions/interaction.gd" id="12_o3o5q"]
 [ext_resource type="PackedScene" uid="uid://b6d8fh6o30302" path="res://Objects/Gameplay/interaction_indicator.tscn" id="13_0dyfn"]
 [ext_resource type="FontFile" uid="uid://dp3oq0ou16joq" path="res://Interface/Font/VCR_OSD_MONO_1.001.ttf" id="14_fngik"]
+[ext_resource type="Texture2D" uid="uid://dtchih56by5n7" path="res://playtime-starter-kit addon/red-hand-upgrader/models and textures/Screen_Background2.png" id="15_rw7sm"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_s6x23"]
 size = Vector3(0.813904, 0.0825195, 0.762939)
@@ -237,179 +238,10 @@ tracks/3/path = NodePath("CSGBox3D")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = PackedFloat32Array(0, 1, -1.20928, 1.22802, 0.207428)
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("Label3D4:text")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": ["progress"]
-}
-tracks/5/type = "value"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("Label3D3:text")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": ["progress"]
-}
-tracks/6/type = "bezier"
-tracks/6/imported = false
-tracks/6/enabled = true
-tracks/6/path = NodePath("CSGBox3D2:scale:x")
-tracks/6/interp = 1
-tracks/6/loop_wrap = true
-tracks/6/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
-}
-tracks/7/type = "bezier"
-tracks/7/imported = false
-tracks/7/enabled = true
-tracks/7/path = NodePath("CSGBox3D2:scale:y")
-tracks/7/interp = 1
-tracks/7/loop_wrap = true
-tracks/7/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
-}
-tracks/8/type = "bezier"
-tracks/8/imported = false
-tracks/8/enabled = true
-tracks/8/path = NodePath("CSGBox3D2:scale:z")
-tracks/8/interp = 1
-tracks/8/loop_wrap = true
-tracks/8/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
-}
-tracks/9/type = "bezier"
-tracks/9/imported = false
-tracks/9/enabled = true
-tracks/9/path = NodePath("CSGBox3D2:position:x")
-tracks/9/interp = 1
-tracks/9/loop_wrap = true
-tracks/9/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(1.2048, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
-}
-tracks/10/type = "bezier"
-tracks/10/imported = false
-tracks/10/enabled = true
-tracks/10/path = NodePath("CSGBox3D2:position:y")
-tracks/10/interp = 1
-tracks/10/loop_wrap = true
-tracks/10/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(1.22802, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
-}
-tracks/11/type = "bezier"
-tracks/11/imported = false
-tracks/11/enabled = true
-tracks/11/path = NodePath("CSGBox3D2:position:z")
-tracks/11/interp = 1
-tracks/11/loop_wrap = true
-tracks/11/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(0.207428, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
-}
-tracks/12/type = "position_3d"
-tracks/12/imported = false
-tracks/12/enabled = true
-tracks/12/path = NodePath("Mesh2")
-tracks/12/interp = 1
-tracks/12/loop_wrap = true
-tracks/12/keys = PackedFloat32Array(0, 1, 1.19264, 0.104808, -0.0104336)
-tracks/13/type = "position_3d"
-tracks/13/imported = false
-tracks/13/enabled = true
-tracks/13/path = NodePath("Mesh")
-tracks/13/interp = 1
-tracks/13/loop_wrap = true
-tracks/13/keys = PackedFloat32Array(0, 1, -1.20736, 0.821004, -0.0104336)
-
-[sub_resource type="Animation" id="Animation_o3o5q"]
-resource_name = "hand upgrader"
-length = 8.156
-step = 0.0
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Label3D4:text")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.0473571, 0.0998031, 0.160141, 0.336038, 0.519771, 0.693028, 1.01789, 1.53766, 2.33897, 2.68503, 3.32306, 3.90791, 4.35985, 4.70545, 4.83837, 4.91812, 4.99788, 5.07763),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": ["1%", "2%", "3%", "4%", "7%", "13%", "18%", "24%", "35%", "58%
-", "62%
-", "64%
-", "69%
-", "72%
-", "79%
-", "89%
-", "90%
-", "99%
-", "complete
-
-
-
-"]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Label3D3:text")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 5.10414, 5.10598),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 1,
-"values": ["progress", "progress", "enhancment
-"]
-}
-tracks/2/type = "bezier"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("CSGBox3D2:scale:x")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
-}
-tracks/3/type = "bezier"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("CSGBox3D2:scale:y")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"handle_modes": PackedInt32Array(0, 0, 0),
-"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0, 6.03467, 8.26776)
-}
 tracks/4/type = "bezier"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("CSGBox3D2:scale:z")
+tracks/4/path = NodePath("CSGBox3D2:scale:x")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
@@ -420,61 +252,234 @@ tracks/4/keys = {
 tracks/5/type = "bezier"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("CSGBox3D2:position:x")
+tracks/5/path = NodePath("CSGBox3D2:scale:y")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
 "handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(1.2048, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(6.08784)
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
 }
 tracks/6/type = "bezier"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("CSGBox3D2:position:y")
+tracks/6/path = NodePath("CSGBox3D2:scale:z")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
-"handle_modes": PackedInt32Array(0, 0),
-"points": PackedFloat32Array(1.22802, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(6.08241, 8.10826)
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
 }
 tracks/7/type = "bezier"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("CSGBox3D2:position:z")
+tracks/7/path = NodePath("CSGBox3D2:position:x")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
 "handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1.2048, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/8/type = "bezier"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("CSGBox3D2:position:y")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1.22802, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/9/type = "bezier"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("CSGBox3D2:position:z")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0.207428, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/10/type = "position_3d"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Mesh2")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = PackedFloat32Array(0, 1, 1.19264, 0.104808, -0.0104336)
+tracks/11/type = "position_3d"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Mesh")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = PackedFloat32Array(0, 1, -1.20736, 0.821004, -0.0104336)
+tracks/12/type = "bezier"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Label3D4:scale:x")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/13/type = "bezier"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("Label3D4:scale:y")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/14/type = "bezier"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("Label3D4:scale:z")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_o3o5q"]
+resource_name = "hand upgrader"
+length = 8.156
+step = 0.0
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CSGBox3D2:scale:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CSGBox3D2:scale:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 6.03467, 8.26776)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CSGBox3D2:scale:z")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CSGBox3D2:position:x")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1.2048, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(6.08784)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CSGBox3D2:position:y")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1.22802, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(6.08241, 8.10826)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("CSGBox3D2:position:z")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0),
 "points": PackedFloat32Array(0.207428, -0.25, 0, 0.25, 0),
 "times": PackedFloat32Array(6.109)
 }
-tracks/8/type = "position_3d"
+tracks/6/type = "position_3d"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Mesh2")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = PackedFloat32Array(0.0265844, 1, 1.19264, 0.104808, -0.0104336, 6.08784, 1, 1.19264, 0.104808, -0.0104336, 8.05509, 1, 1.19264, 0.863695, -0.0104336)
+tracks/7/type = "position_3d"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Mesh")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = PackedFloat32Array(0, 1, -1.20736, 0.821004, -0.0104336, 0.372182, 1, -1.20736, 0.0886393, -0.0104336, 8.16142, 1, -1.20736, 0.0886393, -0.0104336)
+tracks/8/type = "audio"
 tracks/8/imported = false
 tracks/8/enabled = true
-tracks/8/path = NodePath("Mesh2")
+tracks/8/path = NodePath("Scanning")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
-tracks/8/keys = PackedFloat32Array(0.0265844, 1, 1.19264, 0.104808, -0.0104336, 6.08784, 1, 1.19264, 0.104808, -0.0104336, 8.05509, 1, 1.19264, 0.863695, -0.0104336)
-tracks/9/type = "position_3d"
-tracks/9/imported = false
-tracks/9/enabled = true
-tracks/9/path = NodePath("Mesh")
-tracks/9/interp = 1
-tracks/9/loop_wrap = true
-tracks/9/keys = PackedFloat32Array(0, 1, -1.20736, 0.821004, -0.0104336, 0.372182, 1, -1.20736, 0.0886393, -0.0104336, 8.16142, 1, -1.20736, 0.0886393, -0.0104336)
-tracks/10/type = "audio"
-tracks/10/imported = false
-tracks/10/enabled = true
-tracks/10/path = NodePath("Scanning")
-tracks/10/interp = 1
-tracks/10/loop_wrap = true
-tracks/10/keys = {
+tracks/8/keys = {
 "clips": [],
 "times": PackedFloat32Array()
 }
-tracks/10/use_blend = true
+tracks/8/use_blend = true
+tracks/9/type = "bezier"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Label3D4:scale:x")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0.358662, 6.55687)
+}
+tracks/10/type = "bezier"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Label3D4:scale:y")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0.36)
+}
+tracks/11/type = "bezier"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Label3D4:scale:z")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0.36)
+}
 
 [sub_resource type="Animation" id="Animation_kob7v"]
 resource_name = "keycard inserted"
@@ -527,6 +532,14 @@ _data = {
 &"hand upgrader": SubResource("Animation_o3o5q"),
 &"keycard inserted": SubResource("Animation_kob7v")
 }
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_e36jp"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cjo06"]
+albedo_texture = ExtResource("15_rw7sm")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cyry8"]
+albedo_color = Color(2.40654e-07, 0.37641, 0.205859, 1)
 
 [node name="red-hand-upgrader" type="Node3D"]
 script = ExtResource("1_isi4r")
@@ -835,6 +848,7 @@ libraries = {
 
 [node name="Label3D" type="Label3D" parent="."]
 transform = Transform3D(0.541491, 0, 0, 0, 0.467655, 0.272969, 0, -0.272969, 0.467655, 0.406917, 1.22877, 0.0113277)
+visible = false
 modulate = Color(0, 0.502644, 0.0860574, 1)
 text = "Insert
 keycard"
@@ -850,25 +864,21 @@ RedHand"
 font = ExtResource("14_fngik")
 outline_size = 0
 
-[node name="Label3D3" type="Label3D" parent="."]
-transform = Transform3D(0.73855, 0, 0, 0, 0.66497, 0.321359, 0, -0.321359, 0.66497, 0.406917, 1.2415, -0.00136452)
-visible = false
-modulate = Color(0, 0.502644, 0.0860574, 1)
-text = "progress"
-font = ExtResource("14_fngik")
-font_size = 12
-outline_size = 0
-
-[node name="Label3D4" type="Label3D" parent="."]
-transform = Transform3D(0.73855, 0, 0, 0, 0.623475, 0.395898, 0, -0.395898, 0.623475, 0.406917, 1.1415, 0.0647588)
-visible = false
-modulate = Color(0, 0.502644, 0.0860574, 1)
-text = "progress"
-font = ExtResource("14_fngik")
-font_size = 12
-outline_size = 0
-
 [node name="Scanning" type="AudioStreamPlayer3D" parent="."]
+
+[node name="Label3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.26387, 0, 0, 0, 0.133957, -0.213462, 0, 0.239807, 0.119241, 0.404972, 1.19917, 0.0437533)
+mesh = SubResource("PlaneMesh_e36jp")
+surface_material_override/0 = SubResource("StandardMaterial3D_cjo06")
+
+[node name="Label3D4" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.868709, -0.495322, 0, 0.495322, -0.868709, 0.411354, 1.12722, 0.0450069)
+size = Vector3(0.474197, 0.0175292, 0.0697632)
+material = SubResource("StandardMaterial3D_cyry8")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 6.04
 
 [connection signal="inserted" from="KeycardReader" to="." method="_on_keycard_reader_inserted"]
 [connection signal="player_interacted" from="Mesh/BasicInteraction" to="." method="_on_basic_interaction_player_interacted"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

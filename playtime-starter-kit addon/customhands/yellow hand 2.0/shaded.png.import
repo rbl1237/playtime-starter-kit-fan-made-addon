@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://43q1iac341oh"
-path="res://.godot/imported/shaded.png-40c6e0a1514591e632bffcef465d4494.ctex"
+path="res://.godot/imported/shaded.png-cb33d48f8743da3047e5fd6f9ea8aa4a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://customhands/yellow hand 2.0/shaded.png"
-dest_files=["res://.godot/imported/shaded.png-40c6e0a1514591e632bffcef465d4494.ctex"]
+source_file="res://playtime-starter-kit addon/customhands/yellow hand 2.0/shaded.png"
+dest_files=["res://.godot/imported/shaded.png-cb33d48f8743da3047e5fd6f9ea8aa4a.ctex"]
 
 [params]
 

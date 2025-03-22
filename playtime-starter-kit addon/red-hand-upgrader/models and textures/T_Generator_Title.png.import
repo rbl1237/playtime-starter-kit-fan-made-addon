@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dksdvax3dm1v7"
-path="res://.godot/imported/sd310884_1280.png-df28c0349eea203df92888ab4824c886.ctex"
+uid="uid://bb7ythh41qd0l"
+path="res://.godot/imported/T_Generator_Title.png-b54a505103ddee75be7367478393344c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://playtime-starter-kit addon/customhands/yellow hand 2.0/sd310884_1280.png"
-dest_files=["res://.godot/imported/sd310884_1280.png-df28c0349eea203df92888ab4824c886.ctex"]
+source_file="res://playtime-starter-kit addon/red-hand-upgrader/models and textures/T_Generator_Title.png"
+dest_files=["res://.godot/imported/T_Generator_Title.png-b54a505103ddee75be7367478393344c.ctex"]
 
 [params]
 

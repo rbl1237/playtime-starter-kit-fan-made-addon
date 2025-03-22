@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://daaqiw6x5ms1l"
-path="res://.godot/imported/SM_ConsolOmniHand_Upgrader.glb-1ec7f39490d97fd5290679f9d0551f8c.scn"
+path="res://.godot/imported/SM_ConsolOmniHand_Upgrader.glb-8695890d2f819452b586255d9704ba74.scn"
 
 [deps]
 
-source_file="res://red-hand-upgrader/models and textures/SM_ConsolOmniHand_Upgrader.glb"
-dest_files=["res://.godot/imported/SM_ConsolOmniHand_Upgrader.glb-1ec7f39490d97fd5290679f9d0551f8c.scn"]
+source_file="res://playtime-starter-kit addon/red-hand-upgrader/models and textures/SM_ConsolOmniHand_Upgrader.glb"
+dest_files=["res://.godot/imported/SM_ConsolOmniHand_Upgrader.glb-8695890d2f819452b586255d9704ba74.scn"]
 
 [params]
 

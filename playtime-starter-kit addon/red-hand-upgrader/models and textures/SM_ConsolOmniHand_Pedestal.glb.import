@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://fo2wbma2ec34"
-path="res://.godot/imported/SM_ConsolOmniHand_Pedestal.glb-c85256563a9832f93ff1f46a8bfaeafe.scn"
+path="res://.godot/imported/SM_ConsolOmniHand_Pedestal.glb-249b552cc64de98159a3c7ae0b054d00.scn"
 
 [deps]
 
-source_file="res://red-hand-upgrader/models and textures/SM_ConsolOmniHand_Pedestal.glb"
-dest_files=["res://.godot/imported/SM_ConsolOmniHand_Pedestal.glb-c85256563a9832f93ff1f46a8bfaeafe.scn"]
+source_file="res://playtime-starter-kit addon/red-hand-upgrader/models and textures/SM_ConsolOmniHand_Pedestal.glb"
+dest_files=["res://.godot/imported/SM_ConsolOmniHand_Pedestal.glb-249b552cc64de98159a3c7ae0b054d00.scn"]
 
 [params]
 

@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bb56emc0jbul4"
-path.s3tc="res://.godot/imported/T_ConsolesMonitor_A_BC.png-df957778841c7bb4caca7733beaa5781.s3tc.ctex"
+path.s3tc="res://.godot/imported/T_ConsolesMonitor_A_BC.png-45debafda4cc05e3e82ba58a637c8a02.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://red-hand-upgrader/models and textures/T_ConsolesMonitor_A_BC.png"
-dest_files=["res://.godot/imported/T_ConsolesMonitor_A_BC.png-df957778841c7bb4caca7733beaa5781.s3tc.ctex"]
+source_file="res://playtime-starter-kit addon/red-hand-upgrader/models and textures/T_ConsolesMonitor_A_BC.png"
+dest_files=["res://.godot/imported/T_ConsolesMonitor_A_BC.png-45debafda4cc05e3e82ba58a637c8a02.s3tc.ctex"]
 
 [params]
 
