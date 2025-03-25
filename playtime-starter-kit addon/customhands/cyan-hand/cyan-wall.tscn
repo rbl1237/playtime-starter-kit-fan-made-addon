@@ -17,7 +17,7 @@ blend_mode = 1
 albedo_texture = ExtResource("3_docob")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_v3nsi"]
-size = Vector3(0.934692, 1.19031, 0.474885)
+size = Vector3(0.934692, 1.19031, 0.236466)
 
 [node name="breakable wall" type="Node3D"]
 script = ExtResource("1_1i7am")
@@ -65,11 +65,6 @@ transform = Transform3D(-8.24987e-08, 1.49897, 5.72811e-15, -5.24175e-08, 0, -1.
 mesh = SubResource("PlaneMesh_xq7ca")
 surface_material_override/0 = SubResource("StandardMaterial3D_6k5bq")
 
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="CSGBox3D49"]
-transform = Transform3D(-2.23361e-08, -1.49897, 4.23516e-22, -5.24175e-08, 6.11841e-23, -1.49897, 1.19917, -2.79211e-08, -6.55219e-08, -0.375782, 0, -0.337629)
-mesh = SubResource("PlaneMesh_xq7ca")
-surface_material_override/0 = SubResource("StandardMaterial3D_6k5bq")
-
 [node name="HandGrab" type="Area3D" parent="." node_paths=PackedStringArray("grab_marker")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.447115, 1.50755, 0)
 script = ExtResource("4_rx1fo")
@@ -77,7 +72,7 @@ grab_marker = NodePath("HandPositionMarker")
 metadata/_custom_type_script = "uid://d4joakp74nxnn"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="HandGrab"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.164499, 0.0951538, -0.421464)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.164499, 0.0951538, -0.302254)
 shape = SubResource("BoxShape3D_v3nsi")
 
 [node name="HandPositionMarker" type="Marker3D" parent="HandGrab"]
