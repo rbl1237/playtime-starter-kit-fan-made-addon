@@ -1,0 +1,85 @@
+[gd_scene load_steps=9 format=3 uid="uid://bogy8b5sprt16"]
+
+[ext_resource type="Script" uid="uid://do84t1rptoh17" path="res://playtime-starter-kit addon/customhands/cyan-hand/wall.gd" id="1_1i7am"]
+[ext_resource type="Texture2D" uid="uid://2mv36vomum06" path="res://playtime-starter-kit addon/customhands/cyan-hand/T_ConcreteRough_B_BC.png" id="2_12cpj"]
+[ext_resource type="Texture2D" uid="uid://cml68o3b7aydl" path="res://playtime-starter-kit addon/customhands/cyan-hand/Hand_Print_Blue.png" id="3_docob"]
+[ext_resource type="Script" uid="uid://d4joakp74nxnn" path="res://Objects/Gameplay/HandFunctions/hand_grab.gd" id="4_rx1fo"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mkors"]
+albedo_texture = ExtResource("2_12cpj")
+uv1_triplanar = true
+uv1_world_triplanar = true
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_xq7ca"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6k5bq"]
+blend_mode = 1
+albedo_texture = ExtResource("3_docob")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_v3nsi"]
+size = Vector3(0.934692, 1.19031, 0.474885)
+
+[node name="breakable wall" type="Node3D"]
+script = ExtResource("1_1i7am")
+
+[node name="CSGBox3D49" type="CSGBox3D" parent="."]
+transform = Transform3D(-0.4, 0, 3.49691e-08, 0, 0.4, 0, -3.49691e-08, 0, -0.4, -0.0218163, 1.62814, 0.0745182)
+use_collision = true
+size = Vector3(0.740918, 7.7, 12.2)
+material = SubResource("StandardMaterial3D_mkors")
+
+[node name="CSGBox3D50" type="CSGBox3D" parent="CSGBox3D49"]
+transform = Transform3D(0.4, 0, -7.10543e-15, 0, 0.4, 0, 7.10543e-15, 0, 0.4, -0.00673676, 0, 0)
+visible = false
+operation = 2
+use_collision = true
+size = Vector3(3.7683, 7.7, 12.2)
+material = SubResource("StandardMaterial3D_mkors")
+
+[node name="CSGBox3D51" type="CSGBox3D" parent="CSGBox3D49"]
+transform = Transform3D(0.4, -1.74846e-08, -4.68498e-09, 1.74846e-08, 0.34641, 0.2, -4.68497e-09, -0.2, 0.34641, -0.00673676, 0, 0)
+visible = false
+operation = 2
+use_collision = true
+size = Vector3(3.7683, 7.7, 12.2)
+material = SubResource("StandardMaterial3D_mkors")
+
+[node name="CSGBox3D52" type="CSGBox3D" parent="CSGBox3D49"]
+transform = Transform3D(0.4, 3.02841e-08, -1.74846e-08, -3.02841e-08, 0.2, -0.34641, -1.74846e-08, 0.34641, 0.2, -0.00673676, 0, 0)
+visible = false
+operation = 2
+use_collision = true
+size = Vector3(3.7683, 7.7, 12.2)
+material = SubResource("StandardMaterial3D_mkors")
+
+[node name="CSGBox3D53" type="CSGBox3D" parent="CSGBox3D49"]
+transform = Transform3D(0.4, 9.05067e-09, -1.19156e-09, -9.05068e-09, 0.38637, -0.103528, -1.19154e-09, 0.103528, 0.38637, -0.00673676, 0, 0)
+visible = false
+operation = 2
+use_collision = true
+size = Vector3(3.7683, 7.7, 12.2)
+material = SubResource("StandardMaterial3D_mkors")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CSGBox3D49"]
+transform = Transform3D(-8.24987e-08, 1.49897, 5.72811e-15, -5.24175e-08, 0, -1.49897, -1.19917, -1.03123e-07, 6.55219e-08, 0.370803, 0, -0.337629)
+mesh = SubResource("PlaneMesh_xq7ca")
+surface_material_override/0 = SubResource("StandardMaterial3D_6k5bq")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="CSGBox3D49"]
+transform = Transform3D(-2.23361e-08, -1.49897, 4.23516e-22, -5.24175e-08, 6.11841e-23, -1.49897, 1.19917, -2.79211e-08, -6.55219e-08, -0.375782, 0, -0.337629)
+mesh = SubResource("PlaneMesh_xq7ca")
+surface_material_override/0 = SubResource("StandardMaterial3D_6k5bq")
+
+[node name="HandGrab" type="Area3D" parent="." node_paths=PackedStringArray("grab_marker")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.447115, 1.50755, 0)
+script = ExtResource("4_rx1fo")
+grab_marker = NodePath("HandPositionMarker")
+metadata/_custom_type_script = "uid://d4joakp74nxnn"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="HandGrab"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.164499, 0.0951538, -0.421464)
+shape = SubResource("BoxShape3D_v3nsi")
+
+[node name="HandPositionMarker" type="Marker3D" parent="HandGrab"]
+
+[connection signal="grabbed" from="HandGrab" to="." method="_on_hand_grab_grabbed"]
