@@ -532,6 +532,7 @@ script = ExtResource("1_kjm8v")
 
 [node name="Skeleton3D" type="Skeleton3D" parent="."]
 transform = Transform3D(-0.355, 0, 0, 0, -0.355, 0, 0, 0, -0.355, 0.007, 0, 0)
+visible = false
 bones/0/name = "_rootJoint"
 bones/0/parent = -1
 bones/0/rest = Transform3D(1, 2.92898e-16, 3.42285e-08, -8.78695e-16, 1, 1.71143e-08, -3.42285e-08, -1.71143e-08, 1, 0, 0, 0)
@@ -786,7 +787,6 @@ metadata/_custom_type_script = "uid://c263xrbrq4ymt"
 
 [node name="Skeleton3D2" type="Skeleton3D" parent="."]
 transform = Transform3D(-3.333, 5.03269e-07, 2.19986e-14, 0, -1.4569e-07, 3.333, 5.03269e-07, 3.333, 1.4569e-07, -0.0123978, 0.167644, -0.056397)
-visible = false
 bones/0/name = "_rootJoint_2"
 bones/0/parent = -1
 bones/0/rest = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)

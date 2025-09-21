@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://duijhs2508jre" path="res://playtime-starter-kit addon/customhands/yellow hand 2.0/yellow_receiver.gd" id="1_5bckg"]
 [ext_resource type="Script" uid="uid://d4joakp74nxnn" path="res://Objects/Gameplay/HandFunctions/hand_grab.gd" id="2_eu4a7"]
-[ext_resource type="Texture2D" uid="uid://5laxxt85qkuo" path="res://playtime-starter-kit addon/customhands/yellow hand 2.0/Untitled430_20250515134003.png" id="3_d8qo8"]
+[ext_resource type="Texture2D" uid="uid://5laxxt85qkuo" path="res://playtime-starter-kit addon/customhands/yellow hand 2.0/textures/Untitled430_20250515134003.png" id="3_d8qo8"]
 [ext_resource type="Texture2D" uid="uid://cadc7r6m2nl3n" path="res://Objects/Gameplay/Puzzles/GreenPower/Mesh/puzzle_objects_Image_15.png" id="4_4cwft"]
 [ext_resource type="Texture2D" uid="uid://3s4r3sm47i6y" path="res://Objects/Gameplay/Puzzles/GreenPower/Mesh/puzzle_objects_Image_16.png" id="5_4y867"]
 [ext_resource type="Texture2D" uid="uid://b8n7056687jge" path="res://Objects/Gameplay/Puzzles/GreenPower/Mesh/puzzle_objects_Image_17.png" id="6_1evum"]

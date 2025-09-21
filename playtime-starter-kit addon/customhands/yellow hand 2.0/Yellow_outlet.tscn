@@ -1,8 +1,8 @@
 [gd_scene load_steps=11 format=3 uid="uid://b41rhsbtw1pdv"]
 
 [ext_resource type="Script" uid="uid://l6u7f22ks3vn" path="res://playtime-starter-kit addon/customhands/yellow hand 2.0/yellow_outlet.gd" id="1_isary"]
-[ext_resource type="ArrayMesh" uid="uid://cn2xrwh7aqy8c" path="res://playtime-starter-kit addon/customhands/yellow hand 2.0/Purple_Hand_Panel.obj" id="2_xpqpp"]
-[ext_resource type="Texture2D" uid="uid://43q1iac341oh" path="res://playtime-starter-kit addon/customhands/yellow hand 2.0/shaded.png" id="3_2ip1d"]
+[ext_resource type="ArrayMesh" uid="uid://cn2xrwh7aqy8c" path="res://playtime-starter-kit addon/customhands/yellow hand 2.0/models/Purple_Hand_Panel.obj" id="2_xpqpp"]
+[ext_resource type="Texture2D" uid="uid://43q1iac341oh" path="res://playtime-starter-kit addon/customhands/yellow hand 2.0/textures/shaded.png" id="3_2ip1d"]
 [ext_resource type="Script" uid="uid://d4joakp74nxnn" path="res://Objects/Gameplay/HandFunctions/hand_grab.gd" id="7_u5fni"]
 [ext_resource type="AudioStream" uid="uid://dpqpunv2kdyxd" path="res://Player/Sound/Hands/Green/SW_Green_Hand_Hum_Countdown.wav" id="8_85jor"]
 [ext_resource type="AudioStream" uid="uid://dj75g3ncp5cjc" path="res://Player/Sound/Hands/Green/SW_Conduit_HandGrab_Coiling.wav" id="9_a7104"]
