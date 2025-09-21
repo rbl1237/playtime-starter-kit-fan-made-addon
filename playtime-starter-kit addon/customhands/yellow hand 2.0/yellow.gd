@@ -1,8 +1,8 @@
 extends Node3D
 
 @onready var light = $Light
-@onready var hand_normal = $Skeleton3D/hand_normal
-@onready var hand_powered = $Skeleton3D/hand_powered
+@onready var hand_normal = $SK_PurpleHand/Skeleton3D/hand_normal
+@onready var hand_powered = $SK_PurpleHand/Skeleton3D/hand_powered
 @onready var effect_line: Node3D = $EffectLine
 @onready var effect: AnimationPlayer = $Effect
 @onready var discharge: AudioStreamPlayer = $Discharge
